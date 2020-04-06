@@ -1,0 +1,17 @@
+.user-data {
+    transition: all 1s ease;
+    &.info {
+        height: 0;
+        overflow: hidden;
+        &.open {
+            height: initial;
+        }
+    }
+    &.board {
+        height: 0;
+        overflow: hidden;
+        &.open {
+            height: initial;
+        }
+    }
+}

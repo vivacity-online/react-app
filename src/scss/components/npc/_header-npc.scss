@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Henny+Penny&display=swap');
+
+.header-npc-container {
+    position: relative;
+    // margin: auto;
+    margin-bottom: -20px;
+    left: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 75%;
+    img {
+      height: 350px;
+    };
+    @media(max-width: 998px) {
+        max-height: 40%;
+        max-width: 90%;
+        >img {
+            height: 200px;
+        }
+    }
+    // .dialogue {
+    //   margin-right: -75px;
+    //   @media(max-width: 989px) {
+    //     margin-right: -50px;
+    //     margin-top: -35px;
+    //   }
+    // }
+    .speech-bubble {
+        // font-family: 'Henny Penny', ;
+        letter-spacing: 0.5px;
+        position: relative;
+        background: lighten($color-purple, 20%);
+        border-radius: .4em;
+        padding: 2.5px;
+        h3 {
+            padding: 0.5rem;
+        }
+        @media(max-width: 989px) {
+            padding: 0.5rem;
+            margin-left: 20px;
+            h3 {
+                padding: 0.25rem;
+                font-size: 0.75rem;
+            }
+        }
+        img {
+          max-width: 50px;
+          display: flex;
+          border-radius: 50%;
+          margin: 5px;
+          box-shadow: 3px 4px 10px $color-black;
+          animation: bounce 1.5s infinite;
+          transition: all 0.5s ease;
+          &:hover {
+            transform: scale(1.1);
+            box-shadow: 1px 1px 20px $color-black;
+          }
+          @media(max-width: 989px) {
+            max-height: 30px;
+          }
+        }
+      }
+      
+      .speech-bubble:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          right: 20%;
+          width: 0;
+          height: 0;
+          border: 0.719em solid transparent;
+          border-top-color: lighten($color-purple, 20%);
+          border-bottom: 0;
+          border-right: 0;
+          margin-right: -0.359em;
+          margin-bottom: -0.719em;
+      }
+}
+  /* This fires as soon as the element enters the dorm */
+  .header-npc-transition-enter,
+  .header-npc-transition-appear {
+    color: transparent;
+    opacity: 0;
+  }
+  /* This is where we can add the transition*/
+  .header-npc-transition-enter-active,
+  .header-npc-transition-appear-active {
+    opacity: 1;
+  }
+  
+  /* This fires as soon as the this.state.showList is false */
+  .header-npc-transition-exit {
+    color: transparent;
+    background-color: transparent;
+    transition: all 1s;
+  }
+  /* fires as element leaves the DOM*/
+  .header-npc-transition-exit-active {
+    opacity: 0;
+    transition: all 0.5s;
+  }
+
+  @keyframes bounce {
+    50% {
+      transform: scale(1.1);
+      box-shadow: 1px 1px 18px $color-black;
+    }
+  }

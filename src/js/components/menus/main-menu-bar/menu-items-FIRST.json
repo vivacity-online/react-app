@@ -1,0 +1,32 @@
+[
+    {
+        "label": "Home",
+        "url": "/",
+        "auth": false
+    },
+    {
+        "label": "Community",
+        "url": "/community",
+        "auth": false
+    },
+    {
+        "label": "Forums",
+        "url": "/forums",
+        "auth": false
+    },
+    {
+        "label": "Profile",
+        "url": "/profile",
+        "auth": true
+    },
+    {
+        "label": "Shinies",
+        "url": "/shinies",
+        "auth": false
+    },
+    {
+        "label": "Help",
+        "url": "/help",
+        "auth": false
+    }
+]

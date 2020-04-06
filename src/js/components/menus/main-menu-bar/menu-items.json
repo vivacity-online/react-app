@@ -1,0 +1,47 @@
+[
+    {
+        "label": "Home",
+        "url": "/",
+        "auth": false
+    },
+    {
+        "label": "Community",
+        "url": "/community",
+        "auth": false
+    },
+    {
+        "label": "Forums",
+        "url": "/forums",
+        "auth": false
+    },
+    {
+        "label": "Inventory",
+        "url": "/inventory",
+        "auth": true
+    },
+    {
+        "label": "Messages",
+        "url": "/messages",
+        "auth": true
+    },
+    {
+        "label": "Profile",
+        "url": "/profile",
+        "auth": true
+    },
+    {
+        "label": "Shinies",
+        "url": "/shinies",
+        "auth": false
+    },
+    {
+        "label": "Shops",
+        "url": "/shops",
+        "auth": false
+    },
+    {
+        "label": "Help",
+        "url": "/help",
+        "auth": false
+    }
+]

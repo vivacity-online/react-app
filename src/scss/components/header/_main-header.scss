@@ -1,0 +1,31 @@
+.header {
+    &.main {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        background: $color-black url('../../../img/clouds003.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 25vh;
+        width: 100%;
+        padding-top: 2rem;
+        overflow: hidden;
+        .header-logo {
+            @media(max-width: 989px) {
+                width: 50%
+            }
+        }
+        @media(max-width: 989px) {
+            background-size: 200%;
+        }
+    }
+}
+.particles-js-canvas-el {
+    position: absolute;
+    top: 0;
+    max-height: 350px;
+    @media(max-width: 767px) {
+        display: none;
+    }
+}
