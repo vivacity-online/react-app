@@ -10,7 +10,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@tinymce/tinymce-react": "^3.5.0",
-    "gsap": "^3.2.6",
+    "gsap": "^3.6.0",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",
